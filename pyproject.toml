@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "ahra-docs"
+version = "0.1.0"
+description = "AHRA How-Tos"
+authors = ["Stuart McLean <stuart@ahra.ie>"]
+
+[tool.poetry.dependencies]
+# Used for local development
+python = "^3.8"
+
+[tool.poetry.dev-dependencies]
+mike = "*"
+mkdocs = "*"
+mkdocs-autorefs = "*"
+mkdocs-material = "*"
+mkdocs-material-extensions = "*"
+mkdocstrings = "*"
+Markdown = "*"
+

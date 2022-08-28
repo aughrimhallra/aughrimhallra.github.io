@@ -1,0 +1,27 @@
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+
+/* Tables */
+table {
+    margin-bottom: 24px;
+    width: 100%;
+}
+th {
+    background-color: #f0f0f0;
+    padding: 6px;
+}
+td {
+    padding: 6px;
+}
+
+.wy-nav-content {
+    padding: 1.618em 2.236em;
+    height: 100%;
+}
