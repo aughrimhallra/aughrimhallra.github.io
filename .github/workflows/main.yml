@@ -1,0 +1,24 @@
+name: Build
+on:
+  push:
+    branches:
+      - main   # excludes master
+jobs:
+  build:
+    name: Deploy Documentation
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Main
+        uses: actions/checkout@v2
+      - name: Set up Python 3.9
+        uses: actions/setup-python@v2
+        with:
+          python-version: '3.9'
+
+      - name: Install Mkdocs
+        run: pip install --upgrade mkdocs mkdocs-autorefs mkdocs-material mkdocs-material-extensions mkdocstrings
+      - name: Get Latest
+        run: git pull
+
+      - name: Build the Docs site
+        run: mkdocs gh-deploy
